@@ -9,7 +9,7 @@ public class Coordinate {
     private static final int SIZE = 2;
     private List<Coordinate> neighbouringCoordinates;
 
-    Coordinate( int[] dimensions ) throws Exception {
+    public Coordinate( int[] dimensions ) throws Exception {
         if ( dimensions.length != SIZE) {
             throw new Exception( "Incorrect dimensions of coordinate : expected - " + SIZE + " got - " + dimensions.length  );
         }
@@ -17,7 +17,7 @@ public class Coordinate {
         this.y = dimensions[1];
     }
 
-    Coordinate(int x, int y) {
+    public Coordinate(int x, int y) {
         this.x = x;
         this.y = y;
     }
